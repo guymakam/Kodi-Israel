@@ -113,6 +113,19 @@
         <description lang="he">סרטים, סדרות, סקרייפר אתר סרטים, עשרות סקינים בעברית ועוד</description>
     </extension>
 </addon>
+<addon id="repository.xbmc-israel" name="xbmc-israel Hebrew Add-Ons" version="2.1.3" provider-name="xbmc-israel">
+    <extension point="xbmc.addon.repository" name="xbmc-israel Hebrew Add-Ons">
+        <info>https://raw.githubusercontent.com/cubicle-vdo/xbmc-israel/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com//cubicle-vdo/xbmc-israel/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com//cubicle-vdo/xbmc-israel/master/repo/</datadir>
+    </extension>		
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">A repository for all Hebrew must have Add-On. All updated</summary>
+        <description lang="en">Sratim Movie Scraper, Missing Movie and TV Show Scanner and more</description>
+        <description lang="he">סרטים, סדרות, סקרייפר אתר סרטים, עשרות סקינים בעברית ועוד</description>
+    </extension>
+</addon>
 <addon id="repository.xbmcplus.xbmc-plugins" name="xbmcplus Add-on Repository" version="1.3" provider-name="moneymaker">
 	<extension point="xbmc.addon.repository" name="xbmcplus Add-on Repository">
         <info>https://raw.githubusercontent.com/moneymaker365/xbmc-xbmcplus-plugins/master/addons.xml</info>
