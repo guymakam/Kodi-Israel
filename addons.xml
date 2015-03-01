@@ -1,141 +1,366 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="repository.movieshd" name="MoviesHD Addon Repository" version="1.0.1" provider-name="MoviesHD MetalKettle">
-	<extension point="xbmc.addon.repository" name="MoviesHD Addon Repository">
-		<info compressed="false">http://raw.github.com/metalkettle/MoviesHD/master/addons.xml</info>
-		<checksum>http://raw.github.com/metalkettle/MoviesHD/master/addons.xml.md5</checksum>
-		<datadir zip="true">http://raw.github.com/metalkettle/MoviesHD/master/zips</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary></summary>
-		<description></description>
-		<platform>all</platform>
-	</extension>
+<addon id="plugin.video.10qtv" name="10qtv" version="1.0.4" provider-name="GO BEITAR NORDIA">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="10qtv.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Watch video 10qtv</summary>
+        <summary lang="he">צפו בוידאו מהאתר 10qtv</summary>
+        <description lang="en">Watch video from 10qtv</description>
+        <description lang="he">צפו בוידאו מהאתר 10qtv</description>
+        <disclaimer>'כותבי הסקיפרט אינם אחראים לתוכן המצוג באתר ואין להם קשר אליו בשום צורה ,הנך כפוף לתנאי השימוש של האתר</disclaimer>
+        <supportedcontent>
+          <content>tvshows</content>
+        </supportedcontent>
+    </extension>
+ </addon>
+
+<addon id="plugin.video.gozlan.me" name="Gozlan" version="1.2.0" provider-name="cubicle">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.urlresolver"/>
+        <import addon="script.module.t0mm0.common"/>
+        <import addon="script.module.simplejson" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="gozlan.py">
+
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <minversion>31632</minversion>
+        <summary lang="en">Watch video from gozlan.eu</summary>
+        <summary lang="he">צפו בוידאו מהאתר gozlan.eu</summary>
+        <description lang="en">Watch video from gozlan.eu</description>
+        <description lang="he">צפו בוידאו מהאתר gozlan.eu</description>
+        <disclaimer>הנך כפוף לתנאי השימוש של האתר</disclaimer>
+        <supportedcontent>
+          <content>tvshows</content>
+        </supportedcontent>
+    </extension>
 </addon>
-<addon id="Ninbora.Addons"
-       name="Ninbora Addons"
-       version="1.0.18"
-       provider-name="Ninbora Development Team">
-  <extension point="xbmc.addon.repository" name="Ninbora">
-    <info compressed="false">https://raw.githubusercontent.com/ninbora/repo/master/addons.xml</info>
-    <checksum>https://raw.githubusercontent.com/ninbora/repo/master/addons.xml.md5</checksum>
-    <datadir zip="true">https://raw.githubusercontent.com/ninbora/repo/master</datadir>
+
+<addon id="plugin.video.hotVOD.video" name="Hot VOD" version="1.1.6" provider-name="sbentin">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="Hot.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <minversion>31632</minversion>
+        <summary lang="en">Watch Hot video contents.</summary>
+        <summary lang="he">צפה בתוכניות VOD מאתר הוט</summary>
+        <description lang="en">Watch Hot Video contents from Hot.ynet.co.il.</description>
+        <description lang="he">צפה במגוון התוכניות והסדרות הניתנות לצפיה מאתר hot.ynet.co.il</description>
+        <disclaimer>This addon parse Hot's site, you should check Hot's TOS before you using. It's as is</disclaimer>
+        <supportedcontent>
+          <content>tvshows</content>
+          <content>episodes</content>
+          <content>movies</content>
+        </supportedcontent>
+    </extension>
+</addon>
+
+<addon id="plugin.video.IBA" name="IBA VOD" version="1.0.2" provider-name="NOYMAN .D">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="iba.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <supportedcontent>
+          <content>tvshows</content>
+        </supportedcontent>
+    </extension>
+ </addon>
+
+<addon id="plugin.video.ilten" name="ערוץ 10" version="1.3.0" provider-name="vmaster">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="ten.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <minversion>31632</minversion>
+        <summary lang="en">Watch video content from Channel 10.</summary>
+        <summary lang="he">צפה בתוכניות מאפליקציית אנדרויד של ערוץ 10</summary>
+        <description lang="en">Watch contents from Channel 10's android application.</description>
+        <description lang="he">צפה במגוון התוכניות והסדרות הניתנות לצפיה דרך אפליקצית האנדרויד של ערוץ 10</description>
+        <disclaimer>This addon parses Channel 10 android application, you should check Ch. 10 TOS before you using. It's as is.</disclaimer>
+        <supportedcontent>
+          <content>tvshows</content>
+          <content>episodes</content>
+          <content>movies</content>
+        </supportedcontent>
+    </extension>
+</addon>
+
+<addon id="plugin.video.israelive" name="IsraeLIVE" version="4.3.4" provider-name="Benny123, Avigdor">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="[login|startup]"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Benny123's project</summary>
+    <summary lang="he">הפרויקט של Benny123</summary>
+    <description lang="en">Watch Live TV channels from Israel and all over the world.[CR][CR]The addon page and free download:[CR][COLOR blue]http://www.hometheater.co.il/vt219048.html[/COLOR][CR][CR]More addons on The Israeli repo:[CR][COLOR blue]https://github.com/cubicle-vdo/xbmc-israel[/COLOR]</description>
+    <description lang="he">צפיה בשידורי טלויזיה חיים מישראל והעולם.[CR][CR]דף הסברים והורדה בחינם:[CR][COLOR blue]http://www.hometheater.co.il/vt219048.html[/COLOR][CR][CR]תוספים נוספים במקור הישראלי:[CR][COLOR blue]https://github.com/cubicle-vdo/xbmc-israel[/COLOR]</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.israelsports" name="israelsports" version="2.1.4" provider-name="ISRALIVE Team">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <minversion>1</minversion>
+    <summary lang="en">Plays episodes from sport5 and one.co.il site</summary>
+    <description lang="en">This addon parse sport5 site and one.co.il  you should check sport5 TOS before you using. It's as is</description>
+	 <description lang="he">יש לבדוק תנאי השימוש באתר- התוסף נבנה לצרכי לימוד פייטון</description>
+	<disclaimer>This addon parse sport5 site, you should check sport5 TOS before you using. It's as is</disclaimer>
     <platform>all</platform>
-    <summary lang="en">Ninbora Repository</summary>
-    <description lang="en">Addons from Ninbora</description>
   </extension>
 </addon>
-<addon id="repository.lambda" name="lambda's XBMC Addons" version="1.0.5" provider-name="lambda">
-	<extension point="xbmc.addon.repository" name="lambda's XBMC Addon Repository">
-		<info compressed="false">http://raw.github.com/lambda81/lambda-xbmc-addons/master/addons.xml</info>
-		<checksum>http://raw.github.com/lambda81/lambda-xbmc-addons/master/addons.xml.md5</checksum>
-		<datadir zip="true">http://raw.github.com/lambda81/lambda-xbmc-addons/master/repo</datadir>
+
+<addon id="plugin.video.KIDSIL"
+       name="KIDSIL"
+       version="1.2.0"
+       provider-name="o2ri">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+		<import addon="plugin.video.youtube" version="2.1.3"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+    <summary lang="en">Browse children sections in other addons</summary>
+    <description lang="en">links to other  childern addons .</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.MakoTV"
+       name="MakoTV ver.2"
+       version="1.0.3"
+       provider-name="xbmc-israel team (xbmc-israel repo)">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Install lambda's Addons</summary>
-		<summary lang="el">Εγκαταστήστε τα πρόσθετα του lambda</summary>
-		<description lang="en">Download and install addons by lambda</description>
-		<description lang="el">Λήψη και εγκατάσταση προσθέτων από τον lambda</description>
+		<summary lang="en">MakoTV VOD</summary>
+		<description lang="en">MakoTV VOD</description>
 		<platform>all</platform>
 	</extension>
 </addon>
-<addon id="repository.lunatixz" name="Lunatixz Repo" version="1.0" provider-name="Lunatixz">
-    <extension point="xbmc.addon.repository" name="Official PseudoTV Live Repository">
-        <info compressed="false">http://raw.github.com/Lunatixz/XBMC_Addons/master/addons.xml</info>
-        <checksum>http://raw.github.com/Lunatixz/XBMC_Addons/master/addons.xml.md5</checksum>
-        <datadir zip="true">http://raw.github.com/Lunatixz/XBMC_Addons/master/zips</datadir>
+
+<addon id="plugin.video.makoTV.video" name="Mako TV" version="1.32" provider-name="sbentin \V Master">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="Mako.py">
+        <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary></summary>
-        <description></description>
         <platform>all</platform>
+        <minversion>31632</minversion>
+        <summary lang="en">Watch Mako video contents.</summary>
+        <summary lang="he">צפה בתוכניות מאתר מאקו</summary>
+        <description lang="en">Watch Mako Video contents from Mako Application for cellular.</description>
+        <description lang="he">צפה במגוון התוכניות והסדרות הניתנות לצפיה באמצעות אפךיקציית מאקו בטלפון הסלולרי</description>
+        <disclaimer>This addon connects to Mako site, you should check Mako's TOS on android before using. It's as is</disclaimer>
+        <supportedcontent>
+          <content>tvshows</content>
+          <content>episodes</content>
+          <content>movies</content>
+        </supportedcontent>
     </extension>
 </addon>
-<addon id="repository.metalkettle" name="MetalKettles Addon Repository" version="1.4.3" provider-name="MetalKettle">
-	<extension point="xbmc.addon.repository" name="MetalKettles Addon Repository">
-		<info compressed="false">http://raw.github.com/metalkettle/MetalKettles-Addon-Repository/master/addons.xml</info>
-		<checksum>http://raw.github.com/metalkettle/MetalKettles-Addon-Repository/master/addons.xml.md5</checksum>
-		<datadir zip="true">http://raw.github.com/metalkettle/MetalKettles-Addon-Repository/master/zips</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Install my Addons</summary>
-		<description>Download and install addons from MetalKettle</description>
-		<platform>all</platform>
-	</extension>
+
+<addon id="plugin.video.playlistLoader" name="Playlist Loader" version="1.0.6" provider-name="Avigdor">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Playlist Loader - downloaded for free from:
+http://www.hometheater.co.il</summary>
+    <description lang="en">Playlist Loader - downloaded for free from:
+http://www.hometheater.co.il</description>
+    <platform>all</platform>
+  </extension>
 </addon>
-<addon id="repository.superrepo.org.frodo.repositoriesincladult" name="SuperRepo  Repositoriesincladult [v5/m3]" version="0.5.205" provider-name="Bart Otten">
-<requires>
-    <import addon="xbmc.addon" version="12.0.0" />
-</requires>
-        <extension point="xbmc.addon.repository" name="SuperRepo  Repositoriesincladult [v5/m3]">     
-                <info compressed="false">http://xml.superrepo.org/v5/.xml/frodo/repositoriesincladult/addons.xml</info>
-                <checksum>http://md5.superrepo.org/v5/.md5/frodo/repositoriesincladult/addons.xml.md5</checksum>
-                <datadir zip="true">http://redirect.superrepo.org/v5/addons/</datadir>
-                <hashes>true</hashes>
-        </extension>
-        <extension point="xbmc.addon.metadata">
-                <summary>Install add-ons from the SuperRepo.org  Repositoriesincladult Repository</summary>
-                <summary lang="nl">Installeer add-ons uit de SuperRepo.org  Repositoriesincladult Repository</summary>
-                <summary lang="cz">Inštalácia add-ons zo SuperRepo.org  Repositoriesincladult Repozitár</summary>
-                <summary lang="de">Installation von Addons aus dem SuperRepo.org  Repositoriesincladult Repository</summary>
-                <summary lang="pt"> Instale add-ons do SuperRepo.org  Repositoriesincladult  Repositório </summary>
-                <summary lang="br"> Instale add-ons do SuperRepo.org  Repositoriesincladult  Repositório </summary>
-                <description>Download and install add-ons in the category " Repositoriesincladult" from the SuperRepo.org addon repository.[CR][CR]If you find a broken or not working addon or you would like to include another one, please have a look at http://superrepo.org/[CR][CR]The repository is maintained by the XBMC community using the SuperRepo Wiki and our generator fetches addons from multiple sources. Therefore SuperRepo accepts no responsibility for this service.[CR][CR]The eXtended Reposity Generator is developed by Bart Otten[CR][CR]</description>
-                <description lang="nl">Download and installeer add-ons in de categorie " Repositoriesincladult" uit de SuperRepo.org addon repository.[CR][CR]Als u een niet werkende addon vindt of u wilt een extra addon toevoegen, kijk dan op http://superrepo.org/[CR][CR]De repository wordt via de SuperRepo Wiki onderhouden door de XBMC gemeenschap en de generator verzamelt addons van verschillende bronnen. Daarom accepteert SuperRepo geen enkele verantwoordelijkheid voor de ingevoegde addons.[CR][CR]De eXtended Reposity Generator is ontwikkeld door Bart Otten[CR][CR]</description>
-                <description lang="cz">Preber a inštaluj add-ons do kategórie " Repositoriesincladult" z SuperRepo.org addon repozitár.[CR][CR]Ak si našiel add-on ktorý je poškodený alebo nefunkčný, alebo chceš pridať nový addon, potom prosím pozri na http://superrepo.org/[CR][CR]Repozitár je udržiavaný komunitou XBMC a za pomoci SuperRepo Wiki, a tento preberá addons z rôznych zdrojov. Vzhľadom na to, SuperRepo nenesie žiadnu zodpovednosť za služby poskytované týmito addons.[CR][CR]Rozšírený repozitár vyvinul Bart Otten[CR][CR]</description>    
-                <description lang="de">Lade und installiere Addons der Kategorie " Repositoriesincladult" aus dem SuperRepo.org Addon Repository.[CR][CR]Möchtest du ein fehlerhaftes Addon melden oder ein neues Addon vorschlagen, kannst du dies über unsere Webseite http://superrepo.org tun.[CR][CR]Das Repository wird mit Hilfe des SuperRepo Wiki durch die XBMC Community gepflegt und durch unseren Generator aus mehreren Quellen zusammengestellt. Daher übernimmt SuperRepo keinerlei Verantwortung für diesen Service.[CR][CR]Der "eXtended Reposity Generator" wird durch Bart Otten entwickelt.[CR][CR]</description>
-                <description lang="pt"> Baixe e instale o add-ons na categoria " Repositoriesincladult" do Repositório SuperRepo.org. [CR] [CR] Se você encontrar um addon quebrado ou não funcionando, ou você gostaria de incluir um outro, por favor visite http://superrepo.org/ [CR] [CR]O repositório é mantida pela comunidade do XBMC usando o Wiki do SuperRepo e o nosso gerador de busca de addons múltiplas fontes. Portanto SuperRepo não aceita qualquer responsabilidade por esse serviço.[CR][CR]O Gerador Reposity eXtended é desenvolvido por Bart Otten[CR][CR] </description> 
-                <description lang="br"> Baixe e instale o add-ons na categoria " Repositoriesincladult" do Repositório SuperRepo.org. [CR] [CR] Se você encontrar um addon quebrado ou não funcionando, ou você gostaria de incluir um outro, por favor visite http://superrepo.org/ [CR][CR]O repositório é mantida pela comunidade do XBMC usando o Wiki do SuperRepo e o nosso gerador de busca de addons múltiplas fontes. Portanto SuperRepo não aceita qualquer responsabilidade por esse serviço.[CR][CR]O Gerador Reposity eXtended é desenvolvido por Bart Otten[CR][CR]</description> 
-                <disclaimer>The repository is maintained by the XBMC community and our generator fetches addons from multiple sources. Therefore SuperRepo accepts no responsibility for included addons.[CR]</disclaimer>
-                <disclaimer lang="nl">De repository wordt onderhouden door de XBMC gemeenschap en de generator verzamelt addons van verschillende bronnen. Daarom accepteert SuperRepo geen enkele verantwoordelijkheid voor de ingevoegde addons.[CR]</disclaimer>
-                <disclaimer lang="cz">Repozitár je udržiavaný komunitou XBMC a za pomoci SuperRepo Wiki, a tento preberá addons z rôznych zdrojov. Vzhľadom na to, SuperRepo nenesie žiadnu zodpovednosť za služby poskytované týmito addons.[CR]</disclaimer>
-                <disclaimer lang="de">Das Repository wird durch die XBMC Community gepflegt und durch unseren Generator aus mehreren Quellen zusammengestellt. Daher übernimmt SuperRepo keinerlei Verantwortung für die enthaltenen Addons.[CR]</disclaimer>
-                <disclaimer lang="pt"> O repositório é mantido pela comunidade comunidade do XBMC e o nosso gerador de busca de addons de múltiplas fontes. Portanto SuperRepo aceita não se responsabiliza por addons incluídos.[CR]</disclaimer>
-                <disclaimer lang="br"> O repositório é mantido pela comunidade comunidade do XBMC e o nosso gerador de busca de addons de múltiplas fontes. Portanto SuperRepo aceita não se responsabiliza por addons incluídos.[CR]</disclaimer>
-                <platform>all</platform>
-                <website>http://superrepo.org/</website>
-        </extension>   
-</addon>
-<addon id="repository.TheWiz" name="TheWiz Hebrew Add-Ons" version="2.0.0" provider-name="TheWiz">
-    <extension point="xbmc.addon.repository" name="TheWiz Hebrew Add-Ons">
-        <info compressed="true">http://thewiz.info/XBMC/addons.xml</info>
-        <checksum>http://thewiz.info/XBMC/addons.xml.md5</checksum>
-        <datadir zip="true">http://thewiz.info/XBMC/</datadir>
-    </extension>		
+
+<addon id="plugin.video.reshet.video" name="רשת" version="1.3.0" provider-name="sbentin">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="reshet.py">
+        <provides>video</provides>
+    </extension>
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
-        <summary lang="en">A repository for all Hebrew must have Add-On. All updated</summary>
-        <summary lang="he">תוספים מומלצים ומעודכנים</summary>
-        <description lang="en">Sratim Movie Scraper, Missing Movie and TV Show Scanner and more</description>
-        <description lang="he">סרטים, סדרות, סקרייפר אתר סרטים, עשרות סקינים בעברית ועוד</description>
+        <minversion>31632</minversion>
+        <summary lang="en">Watch Reshet video contents.</summary>
+        <summary lang="he">צפה בתוכניות מאפליקציית אנדרויד של רשת</summary>
+        <description lang="en">Watch contents from Reshet's android application.</description>
+        <description lang="he">צפה במגוון התוכניות והסדרות הניתנות לצפיה מהפלאגין של רשת לאנדרויד</description>
+        <disclaimer>This addon parse Reshets's android application, you should check Reshet's TOS before you using. It's as is</disclaimer>
+        <supportedcontent>
+          <content>tvshows</content>
+          <content>episodes</content>
+          <content>movies</content>
+        </supportedcontent>
     </extension>
 </addon>
+
+<addon id="plugin.video.sdarot.tv" name="Sdarot.tv Video" version="2.2.1" provider-name="cubicle">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="sdarottv.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <minversion>31632</minversion>
+        <summary lang="en">Watch Sdarot.tv video contents.</summary>
+        <summary lang="he">סדרות מתוך האתר sdarot.tv</summary>
+        <description lang="en">Watch the many TV series available on sdarot.tv</description>
+        <description lang="he">צפיה בסדרות (הרבות) שיש באתר sdarot.tv</description>
+        <disclaimer>This addon parsees their website, you should check their TOS before you using. It's as is</disclaimer>
+        <supportedcontent>
+          <content>tvshows</content>
+        </supportedcontent>
+    </extension>
+
+</addon>
+
+<addon id="plugin.video.seretil" name="seretil" version="2.1.4" provider-name="hillel">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.urlresolver"/>
+		<import addon="script.module.t0mm0.common"/>
+        <import addon="script.module.simplejson" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="seretil.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Watch seretil.me</summary>
+        <summary lang="he">seretil</summary>
+        <description lang="en">Watch video fromseretil</description>
+        <description lang="he">SERETIL </description>
+        <disclaimer>הנך כפוף לתנאי השימוש של האתר</disclaimer>
+        <supportedcontent>
+          <content>tvshows</content>
+        </supportedcontent>
+    </extension>
+ </addon>
+
+<addon id="plugin.video.wallaNew.video" name="וואלה" version="2.1.8" provider-name="sbentin shlomico">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.common.plugin.cache" version="0.9.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="walla.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <minversion>31632</minversion>
+        <summary lang="en">Watch Walla video contents.</summary>
+        <summary lang="he">צפה במידע VOD מאתר walla</summary>
+        <description lang="en">Watch Walla contents (inculde Yes, Nickoldeon and Viva).</description>
+        <description lang="he">צפה במגוון הסרטים ערוצים וסדרות הניתנים לצפיה דרך אתר video.walla.co.il</description>
+        <disclaimer>This addon parse Walla site, you should check Walla's TOS before you using. It's as is</disclaimer>
+        <supportedcontent>
+          <content>tvshows</content>
+          <content>episodes</content>
+          <content>movies</content>
+        </supportedcontent>
+    </extension>
+</addon>
+
+<addon id="plugin.video.wallaYes.video" name="וואלה Yes" version="1.0.4" provider-name="sbentin">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="yes.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <minversion>31635</minversion>
+        <summary lang="en">Watch Yes video contents from walla video.</summary>
+        <summary lang="he">צפה במידע VOD מאתר yes ב walla</summary>
+        <description lang="en">Watch Yes contents.</description>
+        <description lang="he">צפה במגוון הסרטים ערוצים וסדרות הניתנים לצפיה דרך אתר yes.walla.co.il</description>
+        <disclaimer>This addon parse Yes site, you should check Yes's TOS before you using. It's as is</disclaimer>
+        <supportedcontent>
+          <content>tvshows</content>
+          <content>episodes</content>
+          <content>movies</content>
+        </supportedcontent>
+    </extension>
+</addon>
+
+<addon id="plugin.video.ynet.video" name="Ynet Video" version="1.0.4" provider-name="cubicle">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="ynet.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <minversion>31632</minversion>
+        <summary lang="en">Watch YNet video contents.</summary>
+        <summary lang="he">צפה בכתבות וידאו של YNET</summary>
+        <description lang="en">Watch Ynet Video articles from ynet.co.il</description>
+        <description lang="he">צפיה בכתבות הוידאו של YNET</description>
+        <disclaimer>This addon parse YNet's site, you should check Hot's TOS before you using. It's as is</disclaimer>
+        <supportedcontent>
+          <content>tvshows</content>
+        </supportedcontent>
+    </extension>
+
+</addon>
+
 <addon id="repository.xbmc-israel" name=".[COLOR blue]XBMC Israeli [/COLOR][COLOR white] Streaming Sites[/COLOR]" version="1.0.4" provider-name="cubicle-vdo">
-<extension point="xbmc.addon.repository" name="XBMC Israeli streaming repo for streaming sites">
-<info compressed="false">https://raw.githubusercontent.com/cubicle-vdo/xbmc-israel/master/addons.xml</info>
-<checksum>https://raw.githubusercontent.com/cubicle-vdo/xbmc-israel/master/addons.xml.md5</checksum>
-<datadir zip="true">https://raw.githubusercontent.com/cubicle-vdo/xbmc-israel/master/repo</datadir>
-</extension>
-<extension point="xbmc.addon.metadata">
-<summary>XBMC Israeli Streaming Sites</summary>
-<description>Download and install addons for XBMC Israeli streaming repo for streaming sites</description>
-<platform>all</platform>
-</extension>
-</addon>
-<addon id="repository.xbmcplus.xbmc-plugins" name="xbmcplus Add-on Repository" version="1.3" provider-name="moneymaker">
-	<extension point="xbmc.addon.repository" name="xbmcplus Add-on Repository">
-        <info>https://raw.githubusercontent.com/moneymaker365/xbmc-xbmcplus-plugins/master/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/moneymaker365/xbmc-xbmcplus-plugins/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://github.com/moneymaker365/xbmc-xbmcplus-plugins/raw/master/download/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Install Add-ons from xbmcplus Repository</summary>
-		<description>Add-ons for XBMC</description>
-		<disclaimer>by moneymaker</disclaimer>
-		<platform>all</platform>
-	</extension>
+    <extension point="xbmc.addon.repository" name="XBMC Israeli streaming repo for streaming sites">
+        <info compressed="false">https://raw.githubusercontent.com/cubicle-vdo/xbmc-israel/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/cubicle-vdo/xbmc-israel/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/cubicle-vdo/xbmc-israel/master/repo</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>XBMC Israeli Streaming Sites</summary>
+        <description>Download and install addons for XBMC Israeli streaming repo for streaming sites</description>
+        <platform>all</platform>
+    </extension>
 </addon>
 </addons>
